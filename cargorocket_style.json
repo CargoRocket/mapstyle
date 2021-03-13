@@ -6,7 +6,7 @@
     "rrqsuvx2b": {
       "type": "vector",
       "tiles": [
-        "http://tiles.cargorocket.de/maps/osm/transport_lines/{z}/{x}/{y}.pbf"
+        "https://tiles.cargorocket.de/maps/osm/transport_lines/{z}/{x}/{y}.pbf"
       ],
       "minZoom": 0,
       "maxZoom": 14,
