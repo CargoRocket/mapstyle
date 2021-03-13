@@ -2,7 +2,7 @@ import { Map, GeolocateControl } from 'https://cdn.skypack.dev/maplibre-gl'
 
 const map = new Map({
   container: "map",
-  style: `./cargorocket_style.json`,
+  style: `./cargorocket-base.json`,
   center: [9.18, 48.77],
   zoom: 14
 })
