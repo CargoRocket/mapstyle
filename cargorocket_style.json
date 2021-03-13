@@ -1,0 +1,37 @@
+{
+  "version": 8,
+  "name": "CargoRocket Basemap",
+  "metadata": {"maputnik:renderer": "mbgljs"},
+  "sources": {
+    "rrqsuvx2b": {
+      "type": "vector",
+      "tiles": [
+        "http://tiles.cargorocket.de/maps/osm/transport_lines/{z}/{x}/{y}.pbf"
+      ],
+      "minZoom": 0,
+      "maxZoom": 14,
+      "minzoom": 7,
+      "maxzoom": 20
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "radwege",
+      "type": "line",
+      "source": "rrqsuvx2b",
+      "source-layer": "transport_lines",
+      "filter": ["all", ["==", "class", "highway"], ["==", "type", "path"]],
+      "paint": {"line-color": "rgba(19, 44, 212, 1)"}
+    },
+    {
+      "id": "nicht-radwege",
+      "type": "line",
+      "source": "rrqsuvx2b",
+      "source-layer": "transport_lines",
+      "filter": ["all", ["!=", "type", "path"]]
+    }
+  ],
+  "id": "nzb7o70nl"
+}
